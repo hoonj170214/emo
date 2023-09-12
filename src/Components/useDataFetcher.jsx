@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import GetImg from '../Components/GetImg';
 
-function DriverStation() {
+function useDataFetcher() {
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -17,14 +16,10 @@ function DriverStation() {
       } catch (error) {
         console.error('에러발생 : ', error);
       }
-      // 쌤이 작성해주신 코드
-      //const responsData = await result.then((result) => result.data);
-      //setData(responsData);
     };
     fetchData();
   }, []);
-
-  return <div></div>;
+  return data;
 }
 
-export default DriverStation;
+export default useDataFetcher;
