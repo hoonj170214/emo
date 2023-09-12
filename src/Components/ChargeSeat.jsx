@@ -1,11 +1,13 @@
 import React from 'react';
 
-function ChargeSeat({ isCharged, name, type }) {
-  if (isCharged) {
-    return <button></button>;
-  } else {
-    return <button></button>;
-  }
+function ChargeSeat({ text, onClick }) {
+  return (
+    <div>
+      <button class='bg-indigp' onClick={onClick}>
+        {text}
+      </button>
+    </div>
+  );
 }
 
 export default ChargeSeat;
