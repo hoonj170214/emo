@@ -1,20 +1,20 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import driverHome from './Pages/driverHome';
-import driverStation from './Pages/driverStation';
-import driverSeat from './Pages/driverSeat';
-import adminHome from './Pages/adminHome';
-import adminWorking from './Pages/adminWorking';
+import DriverHome from './Pages/DriverHome';
+import DriverStation from './Pages/DriverStation';
+import DriverSeat from './Pages/DriverSeat';
+import AdminHome from './Pages/AdminHome';
+import AdminWorking from './Pages/AdminWorking';
 
 function App() {
   return (
     <div className='App'>
       <Routes>
-        <Route path='/' element={<driverHome />} />
-        <Route path='/driverStation' element={<driverStation />} />
-        <Route path='/driverSeat' element={<driverSeat />} />
-        <Route path='/adminHome' element={<adminHome />} />
-        <Route path='/adminWorking' element={<adminWorking />} />
+        <Route path='/' element={<DriverHome />} />
+        <Route path='/driverStation' element={<DriverStation />} />
+        <Route path='/driverSeat' element={<DriverSeat />} />
+        <Route path='/adminHome' element={<AdminHome />} />
+        <Route path='/adminWorking' element={<AdminWorking />} />
       </Routes>
     </div>
   );
