@@ -1,7 +1,12 @@
 import React from 'react';
+import GetImg from '../Components/GetImg';
 
 function DriverStation() {
-  return <div>driverStation</div>;
+  return (
+    <div>
+      <GetImg />
+    </div>
+  );
 }
 
 export default DriverStation;
