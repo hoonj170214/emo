@@ -1,12 +1,12 @@
 import React from 'react';
-import bag from '../img/bag1.png';
 
+import home from '../img/home.png';
 function StationProfil() {
   return (
     <button class='bg-gray-300 rounded-3xl m-10 drop-shadow flex max-h-33'>
       {/* circle*/}
       <div class='bg-gray-100 rounded-full flex-initial w-1/4 p-3 m-3'>
-        <img src={bag} alt='bag' class='flex-initial w-11/12 justify-center	' />
+        <img src={home} alt='bag' class='flex-initial w-11/12 justify-center	' />
       </div>
 
       <div class='flex flex-col mx-4 items-start'>
