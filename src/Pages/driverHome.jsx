@@ -2,6 +2,7 @@ import React from 'react';
 import ChargeSeat from '../Components/ChargeSeat';
 import Header from '../Components/Header';
 import HomeButton from '../Components/HomeButton';
+import StationProfil from '../Components/StationProfil';
 
 function DriverHome() {
   return (
@@ -13,6 +14,7 @@ function DriverHome() {
         />
       </div>
       <HomeButton />
+      <StationProfil />
     </div>
   );
 }

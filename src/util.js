@@ -1,4 +1,4 @@
-import bag from './img/bag.png';
+import bag from './img/bag1.png';
 import company from './img/company.png';
 import home from './img/home.png';
 import userThumbnailMan from './img/userThumbnail1.png';
