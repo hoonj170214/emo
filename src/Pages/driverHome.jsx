@@ -1,6 +1,7 @@
 import React from 'react';
 import ChargeSeat from '../Components/ChargeSeat';
 import Header from '../Components/Header';
+import HomeButton from '../Components/HomeButton';
 
 function DriverHome() {
   return (
@@ -11,6 +12,7 @@ function DriverHome() {
           placeholder='충전소를 입력해주세요'
         />
       </div>
+      <HomeButton />
     </div>
   );
 }

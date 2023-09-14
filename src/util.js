@@ -3,6 +3,7 @@ import company from './img/company.png';
 import home from './img/home.png';
 import userThumbnailMan from './img/userThumbnail1.png';
 import userThumbnailWoman from './img/userThumbnail2.png';
+import car from './img/car.png';
 
 export const getImgById = (id) => {
   const targetImgId = String(id);
@@ -13,6 +14,8 @@ export const getImgById = (id) => {
       return bag;
     case '3':
       return home;
+    case '4':
+      return car;
   }
 };
 
