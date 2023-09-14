@@ -6,7 +6,7 @@ function ChargeSeat({ isCharged, num, onClick }) {
     return (
       <div class='flex'>
         <button
-          class='bg-green-500 flex-1	text-lg	font-sans	 font-bold text-white	whitespace-pre-wrap px-20 py-2 m-3 items-center	justify-center	rounded-xl drop-shadow	'
+          class='bg-green-500 flex-1	flex-grow text-lg	font-sans	 font-bold text-white	whitespace-pre-wrap px-20 py-2 m-3 	rounded-xl items-center justify-center drop-shadow	'
           onClick={onClick}
         >
           {num}
