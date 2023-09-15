@@ -1,8 +1,8 @@
 import React from 'react';
-import ChargeSeat from '../Components/ChargeSeat';
 import Header from '../Components/Header';
 import HomeButton from '../Components/HomeButton';
 import StationProfil from '../Components/StationProfil';
+import Seat from '../Components/Seat';
 
 function DriverHome() {
   return (
@@ -15,6 +15,28 @@ function DriverHome() {
       </div>
       <HomeButton />
       <StationProfil />
+      <Header text={'자리를 알려드릴게요'}></Header>
+      <Seat
+        isCharged={true}
+        num={'1번 자리'}
+        onClick={() => {
+          alert('hi');
+        }}
+      />
+      <Seat
+        isCharged={false}
+        num={'2번 자리'}
+        onClick={() => {
+          alert('hi');
+        }}
+      />
+      <Seat
+        isCharged={true}
+        num={'3번 자리'}
+        onClick={() => {
+          alert('hi');
+        }}
+      />
     </div>
   );
 }
