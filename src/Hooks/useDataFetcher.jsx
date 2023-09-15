@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function useDataFetcher({ searchText }) {
+function useDataFetcher(searchText) {
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {

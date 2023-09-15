@@ -12,7 +12,7 @@ function DriverStation() {
 
   return (
     <div>
-      <Header text={'충전소를 입력하세요'}></Header>
+      <Header text={'충전소를 보여드릴게요'}></Header>
       <input
         type='text'
         value={searchText}
