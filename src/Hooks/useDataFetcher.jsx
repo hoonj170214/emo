@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-function useDataFetcher() {
+function useDataFetcher({ searchText }) {
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       const key = `serviceKey=97eabseJjXsRuTOaYAkcZ%2FPXibvwipHJKBay3VS%2BDW6STV5QjDDoxIsPxGdK1KCaBMV3MFoR8T%2BSt3JvufMhSg%3D%3D`;
-      const apiUrl = `https://api.odcloud.kr/api/EvInfoServiceV2/v1/getEvSearchList?page=1&perPage=10&returnType=JSON&${key}`;
+      const apiUrl = `https://api.odcloud.kr/api/EvInfoServiceV2/v1/getEvSearchList?page=1&perPage=10&returnType=JSON&${key}&cond%5Baddr%3A%3ALIKE%5D=${searchText}`;
       try {
         const response = await fetch(apiUrl);
         if (!response.ok) {
