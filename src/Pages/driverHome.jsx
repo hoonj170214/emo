@@ -8,9 +8,11 @@ function DriverHome() {
   const navigateStation = () => {
     navigate('/DriverStation');
   };
+
   return (
     <div>
       <HomeProfile />
+
       <button
         class='bg-gray-100  w-3/5 m-20 items-center justify-center rounded-xl text-center text-l text-gray-400 p-5 drop-shadow '
         onClick={navigateStation}
