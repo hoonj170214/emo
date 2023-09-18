@@ -1,7 +1,7 @@
 import React from 'react';
 
 import home from '../img/home.png';
-function StationProfil() {
+function StationProfil({ csNm, addr }) {
   return (
     <button class='bg-gray-300 rounded-3xl m-10 drop-shadow flex max-h-33'>
       {/* circle*/}
@@ -10,9 +10,9 @@ function StationProfil() {
       </div>
 
       <div class='flex flex-col mx-4 items-start'>
-        <p class='font-bold my-3 flex-nowrap max-h-5'>{csNm}</p>
+        <p class='font-bold my-3 flex-nowrap max-h-5'>우리집</p>
         {/* 제목, 주소는 최대 9글자 권장*/}
-        <p class='mb-3 max-h-5'>{addr}</p>
+        <p class='mb-3 max-h-5'>부산시</p>
       </div>
     </button>
   );
