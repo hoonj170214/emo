@@ -3,9 +3,9 @@ import thumbnail from '../img/userThumbnail1.png';
 
 function HomeProfile() {
   return (
-    <div class='bg-green-500 h-24 drop-shadow-md'>
-      <div class='flex flex-row'>
-        <div class='flex ml-2 mt-2'>
+    <div class='bg-green-500 h-36 drop-shadow-md'>
+      <div class='flex flex-row p-6'>
+        <div class='flex ml-5 mt-3 '>
           <button class='w-16  bg-gray-100 rounded-2xl '>
             <img
               src={thumbnail}

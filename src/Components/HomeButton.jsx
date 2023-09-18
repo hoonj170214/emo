@@ -7,9 +7,9 @@ function HomeButton() {
     navigate('/DriverStation');
   };
   return (
-    <div class='flex justify-center items-center h-screen'>
+    <div class='flex justify-center items-start h-screen my-0'>
       <button
-        class='bg-green-500 w-4/5 h-40vw my-80 rounded-3xl drop-shadow-md'
+        class='bg-green-500 w-4/5 h-20vw my-0 rounded-3xl drop-shadow-md'
         onClick={navigateStation}
       >
         <div class='flex flex-col items-center justify-center h-full'>
