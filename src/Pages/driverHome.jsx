@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Form, useLocation, useNavigate, useParams } from 'react-router-dom';
 import useDataFetcher from '../Hooks/useDataFetcher';
-
+import StationProfil from '../Components/StationProfil';
 function DriverHome() {
   const [searchText, setSearchText] = useState('');
   const navigate = useNavigate();
@@ -35,6 +35,9 @@ function DriverHome() {
   }, [q]);
   console.log(q);
 
+  const uniqueData = [
+    ...new Set(data.map((item) => `${item.csNm} : ${item.addr} `)),
+  ];
   return (
     <div class='flex flex-wrap justify-center mx-7'>
       <input
@@ -45,6 +48,15 @@ function DriverHome() {
         onChange={(e) => setSearchText(e.target.value)}
       />
       <button onClick={handleSearch}>검색</button>
+      <StationProfil 
+        {data.map((item) => (
+          <div key={item.id}>
+            <p> {item.csNm}</p>
+            <p> {item.addr}</p>
+          </div>
+        ))}
+        >
+      </StationProfil>
     </div>
   );
 }

@@ -10,9 +10,9 @@ function StationProfil() {
       </div>
 
       <div class='flex flex-col mx-4 items-start'>
-        <p class='font-bold my-3 flex-nowrap max-h-5'>우리집</p>
+        <p class='font-bold my-3 flex-nowrap max-h-5'>{csNm}</p>
         {/* 제목, 주소는 최대 9글자 권장*/}
-        <p class='mb-3 max-h-5'>부산광역시 기장군...</p>
+        <p class='mb-3 max-h-5'>{addr}</p>
       </div>
     </button>
   );
