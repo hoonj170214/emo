@@ -1,5 +1,7 @@
 # 전기차 충전소 모니터링 웹사이트
 
+![시연 영상 - 복사본](https://github.com/hoonj170214/emo/assets/134394435/b742d5a2-d61b-46a7-887d-bc2923af275c)
+
 ## USING
 
 - react
