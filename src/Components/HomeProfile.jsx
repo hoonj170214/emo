@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import thumbnail from '../img/userThumbnail1.png';
 
-function HomeProfile() {
+function HomeProfile(props) {
   const [isManage, setIsManage] = useState(false);
-  const HandleOnClickDriver = () => {
-    setIsManage(false);
-  };
-  const handleOnClickAdmin = () => {
-    setIsManage(true);
-  };
+  const { onClickDriver, onClickAdmin, isAdmin } = props;
+
   return (
     <div
       id='HomeProfile'
-      className={isManage ? 'bg-red-400 pb-5' : 'bg-green-500 pb-5'}
+      className={
+        isAdmin
+          ? 'bg-green-500 pb-5 w-full	 drop-shadow'
+          : 'bg-red-400 pb-5 w-full	 drop-shadow'
+      }
     >
       <div class='flex flex-row p-6'>
         <div class='flex ml-5 mt-3 '>
@@ -34,13 +34,10 @@ function HomeProfile() {
         </div>
       </div>
       <div class='flex items-center justify-center '>
-        <p
-          class='pr-5 decoration-4 decoration-solid '
-          onClick={HandleOnClickDriver}
-        >
+        <p class='pr-5 decoration-4 decoration-solid ' onClick={onClickDriver}>
           <strong>운전자</strong>
         </p>
-        <p class='pl-5' onClick={handleOnClickAdmin}>
+        <p class='pl-5' onClick={onClickAdmin}>
           관리자
         </p>
       </div>
