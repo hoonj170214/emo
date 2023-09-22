@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../Components/Header';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import useDataFetcher from '../Hooks/useDataFetcher';
 
 function DriverSeat() {
@@ -13,7 +13,9 @@ function DriverSeat() {
     <div>
       <Header text={'자리를 보여드릴게요'} />
       {data.map((item) => (
-        <li key={item.id}>{item.name}</li>
+        <li key={item.id}>
+          <Link to='SeatList'>{item.name}</Link>
+        </li>
       ))}
     </div>
   );

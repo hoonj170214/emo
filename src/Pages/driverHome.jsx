@@ -39,7 +39,7 @@ function DriverHome() {
       ) : (
         <div>
           <button
-            class='bg-gray-100  w-3/5 m-20 items-center justify-center rounded-xl text-center text-l text-gray-400 p-5 drop-shadow '
+            class='bg-gray-100  w-3/5 m-20 items-center justify-center rounded-xl text-center text-l text-gray-400 p-5 drop-shadow'
             onClick={navigateStation}
           >
             충전소를 입력하세요

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useDataFetcher from '../Hooks/useDataFetcher';
 import Header from '../Components/Header';
 import home from '../img/home.png';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function DriverStation() {
   const [searchText, setSearchText] = useState('');
@@ -68,22 +68,26 @@ function DriverStation() {
               <div>
                 {data.map((item) => (
                   <button class='bg-gray-300 rounded-3xl m-10 drop-shadow flex max-h-33'>
-                    <div class='flex flex-row'>
-                      <div class='bg-gray-100 rounded-full flex-initial w-1/4 p-3 m-3'>
-                        <img
-                          src={home}
-                          alt='bag'
-                          class='flex-initial w-11/12 justify-center	'
-                        />
+                    <Link to='/SeatList'>
+                      <div class='flex flex-row'>
+                        <div class='bg-gray-100 rounded-full flex-initial w-1/4 p-3 m-3'>
+                          <img
+                            src={home}
+                            alt='bag'
+                            class='flex-initial w-11/12 justify-center	'
+                          />
+                        </div>
+                        <div class='flex flex-col mx-4 items-start'>
+                          <li key={item.id}>{item.name}</li>
+                          <p class='font-bold my-3 flex-nowrap max-h-5 overflow-hidden whitespace-nowrap'>
+                            {item.csNm}
+                          </p>
+                          <p class='mb-3 max-h-5 overflow-hidden '>
+                            {item.addr}
+                          </p>
+                        </div>
                       </div>
-                      <div class='flex flex-col mx-4 items-start'>
-                        <li key={item.id}>{item.name}</li>
-                        <p class='font-bold my-3 flex-nowrap max-h-5 overflow-hidden whitespace-nowrap'>
-                          {item.csNm}
-                        </p>
-                        <p class='mb-3 max-h-5 overflow-hidden '>{item.addr}</p>
-                      </div>
-                    </div>
+                    </Link>
                   </button>
                 ))}
               </div>
